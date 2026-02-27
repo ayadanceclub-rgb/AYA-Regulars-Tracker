@@ -1,6 +1,13 @@
 import axios from "axios";
 
-const API_URL = process.env.REACT_APP_BACKEND_URL + "/api";
+// normalize backend URL (force HTTPS, add protocol if missing)
+let backendUrl = process.env.REACT_APP_BACKEND_URL || "";
+if (backendUrl && !/^https?:\/\//i.test(backendUrl)) {
+  backendUrl = `https://${backendUrl}`;
+}
+// ensure https scheme
+backendUrl = backendUrl.replace(/^http:/i, "https:");
+const API_URL = backendUrl.replace(/\/+$/,'') + "/api";
 
 const api = axios.create({ baseURL: API_URL });
 
