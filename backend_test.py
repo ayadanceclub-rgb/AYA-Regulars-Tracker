@@ -8,13 +8,15 @@ from datetime import datetime
 class AYABackendTester:
     def __init__(self):
         # Get backend URL from frontend env file
-        with open('/app/frontend/.env', 'r') as f:
-            for line in f:
-                if line.startswith('REACT_APP_BACKEND_URL'):
-                    self.base_url = line.split('=', 1)[1].strip()
-                    break
-        else:
-            self.base_url = "https://dance-pass-tracker.preview.emergentagent.com"
+        self.base_url = "https://dance-pass-tracker.preview.emergentagent.com"
+        try:
+            with open('/app/frontend/.env', 'r') as f:
+                for line in f:
+                    if line.startswith('REACT_APP_BACKEND_URL'):
+                        self.base_url = line.split('=', 1)[1].strip()
+                        break
+        except FileNotFoundError:
+            pass
         
         self.admin_token = None
         self.instructor_token = None
