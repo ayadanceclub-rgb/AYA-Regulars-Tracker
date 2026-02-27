@@ -65,10 +65,12 @@
         @apply border-border;
     }
     body {
-        @apply bg-background text-foreground font-body antialiased;
+        @apply bg-background text-foreground antialiased;
+        font-family: 'Plus Jakarta Sans', sans-serif;
     }
     h1, h2, h3 {
-        @apply font-heading tracking-tight;
+        @apply tracking-tight;
+        font-family: 'Syne', sans-serif;
     }
 }
 
