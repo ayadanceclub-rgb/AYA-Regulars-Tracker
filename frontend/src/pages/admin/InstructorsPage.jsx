@@ -16,7 +16,7 @@ export default function InstructorsPage() {
   const [editing, setEditing] = useState(null);
   const [form, setForm] = useState({ name: "", email: "", password: "" });
 
-  const load = () => api.get("/users").then((r) => setUsers(r.data)).catch(() => {});
+  const load = () => { api.get("/users").then((r) => setUsers(r.data)).catch(() => {}); };
   useEffect(load, []);
 
   const openCreate = () => { setEditing(null); setForm({ name: "", email: "", password: "" }); setDialogOpen(true); };
