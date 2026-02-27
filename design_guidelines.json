@@ -1,0 +1,190 @@
+{
+  "brand_identity": {
+    "name": "AYA Regulars Manager",
+    "description": "A rhythm-focused, monochrome attendance and pass tracking system for dance communities.",
+    "emotional_tone": "Rhythmic, Disciplined, Minimal, Fluid, Professional",
+    "aesthetic": "Strict Monochrome, High Contrast, Kinetic Typography, Negative Space",
+    "design_archetype": "The Performance Pro (Monochrome Variant)"
+  },
+  "typography": {
+    "font_family": {
+      "headings": {
+        "name": "Syne",
+        "fallback": "sans-serif",
+        "url": "https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap",
+        "usage": "Use for all H1-H3 headings. Tight tracking for heavy weights."
+      },
+      "body": {
+        "name": "Plus Jakarta Sans",
+        "fallback": "sans-serif",
+        "url": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap",
+        "usage": "Use for all body text, UI labels, and data tables. Excellent readability."
+      }
+    },
+    "styles": {
+      "h1": "font-heading text-4xl md:text-5xl font-bold tracking-tight leading-none",
+      "h2": "font-heading text-3xl md:text-4xl font-semibold tracking-tight",
+      "h3": "font-heading text-2xl font-medium tracking-normal",
+      "body_large": "font-body text-lg leading-relaxed",
+      "body_default": "font-body text-base leading-relaxed text-muted-foreground",
+      "caption": "font-body text-xs uppercase tracking-widest font-semibold text-muted-foreground/70",
+      "mono_data": "font-mono text-sm tracking-wide"
+    }
+  },
+  "colors": {
+    "palette": {
+      "light": {
+        "background": "#FFFFFF",
+        "foreground": "#000000",
+        "card": "#FFFFFF",
+        "card_foreground": "#000000",
+        "popover": "#FFFFFF",
+        "popover_foreground": "#000000",
+        "primary": "#18181b",
+        "primary_foreground": "#FFFFFF",
+        "secondary": "#f4f4f5",
+        "secondary_foreground": "#18181b",
+        "muted": "#f4f4f5",
+        "muted_foreground": "#71717a",
+        "accent": "#f4f4f5",
+        "accent_foreground": "#18181b",
+        "destructive": "#000000",
+        "destructive_foreground": "#FFFFFF",
+        "border": "#e4e4e7",
+        "input": "#e4e4e7",
+        "ring": "#18181b"
+      },
+      "dark": {
+        "background": "#09090b",
+        "foreground": "#FAFAFA",
+        "card": "#09090b",
+        "card_foreground": "#FAFAFA",
+        "popover": "#09090b",
+        "popover_foreground": "#FAFAFA",
+        "primary": "#FAFAFA",
+        "primary_foreground": "#18181b",
+        "secondary": "#27272a",
+        "secondary_foreground": "#FAFAFA",
+        "muted": "#27272a",
+        "muted_foreground": "#a1a1aa",
+        "accent": "#27272a",
+        "accent_foreground": "#FAFAFA",
+        "destructive": "#FAFAFA",
+        "destructive_foreground": "#000000",
+        "border": "#27272a",
+        "input": "#27272a",
+        "ring": "#d4d4d8"
+      }
+    },
+    "rules": [
+      "STRICTLY NO COLORS: Do not use blue, green, red, etc. Even for errors/success, use Black/White iconography and patterns.",
+      "Success State: Solid Black Circle with White Check (Light Mode) / White Circle with Black Check (Dark Mode).",
+      "Error State: Outlined Circle with thick stroke + Strikethrough or 'X'.",
+      "Gradients: None. Use solid fills or 1px borders.",
+      "Opacity: Use opacity heavily for hierarchy (e.g., text-black/60 for secondary text)."
+    ]
+  },
+  "layout_and_spacing": {
+    "border_radius": {
+      "card": "rounded-2xl",
+      "button": "rounded-full",
+      "input": "rounded-xl"
+    },
+    "spacing_scale": {
+      "section_gap": "gap-8 md:gap-12",
+      "card_padding": "p-6 md:p-8",
+      "container_padding": "px-4 md:px-8 lg:px-12"
+    },
+    "mobile_first_rules": [
+      "Touch Targets: All interactive elements MUST be at least 48px height.",
+      "Bottom Action Bar: For primary actions on mobile (e.g., Save Attendance), use a sticky bottom bar.",
+      "Thumb Zone: Keep frequent actions (Mark Present) in the lower 50% of the screen."
+    ]
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 h-12 px-8 rounded-full font-medium transition-all active:scale-95",
+      "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/80 h-12 px-8 rounded-full font-medium",
+      "ghost": "hover:bg-accent hover:text-accent-foreground h-12 px-4 rounded-full",
+      "icon_large": "h-14 w-14 rounded-full border-2 border-primary flex items-center justify-center transition-all active:scale-90"
+    },
+    "cards": {
+      "default": "bg-card text-card-foreground rounded-2xl border border-border/50 shadow-sm hover:shadow-md transition-shadow duration-300",
+      "interactive": "bg-card hover:bg-accent/50 cursor-pointer rounded-2xl border border-border transition-all hover:border-primary/20",
+      "attendance_card": "flex items-center justify-between p-4 border-b border-border last:border-0"
+    },
+    "inputs": {
+      "default": "flex h-12 w-full rounded-xl border border-input bg-transparent px-3 py-1 text-base shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+    },
+    "badges": {
+      "default": "inline-flex items-center rounded-full border border-border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 text-foreground",
+      "active": "bg-primary text-primary-foreground border-transparent",
+      "outline": "text-foreground border-foreground"
+    }
+  },
+  "assets": {
+    "images": [
+      {
+        "category": "hero_background",
+        "url": "https://images.unsplash.com/photo-1540348744019-480ed1ef1fce",
+        "alt": "Dynamic monochrome dancer motion",
+        "usage": "Login page background (with overlay), Hero sections"
+      },
+      {
+        "category": "empty_state",
+        "url": "https://images.unsplash.com/photo-1657726565569-be0a42f8896b",
+        "alt": "Minimalist empty studio",
+        "usage": "Empty lists, 404 pages, No results"
+      },
+      {
+        "category": "texture_overlay",
+        "url": "https://images.unsplash.com/photo-1647687516149-78e68706f67d",
+        "alt": "Abstract ballerina detail",
+        "usage": "Subtle background texture for cards or sidebars"
+      }
+    ],
+    "icons": {
+      "library": "lucide-react",
+      "style": "Stroke width 1.5px or 2px. Sharp or slightly rounded joins."
+    }
+  },
+  "feature_specific_guidelines": {
+    "attendance_marking": {
+      "interaction": "Single tap to toggle status. Avoid dropdowns for status if possible.",
+      "visuals": "Use big circular toggles. Empty circle = Absent. Filled Check = Present. Filled Cross = Excused (if needed).",
+      "layout": "List view with avatar on left, name in middle, big toggle on right."
+    },
+    "admin_dashboard": {
+      "layout": "Bento Grid layout for stats.",
+      "charts": "Use 'Recharts' with monochrome patterns (stripes, dots) or simple grayscale bars to differentiate data sets without color."
+    },
+    "pass_management": {
+      "visuals": "Ticket/Coupon style layout for Passes. Use dashed borders for separation."
+    }
+  },
+  "universal_guidelines": {
+    "general": [
+      "NO COLOR PERMITTED. Use Black, White, and Gray scale only.",
+      "Use 'sonner' for toasts.",
+      "Mobile-first responsive design is mandatory.",
+      "Ensure all interactive elements have `data-testid`."
+    ],
+    "motion": [
+      "Use `framer-motion` for page transitions and list entry animations.",
+      "Micro-interactions: Buttons should scale down slightly on press (`active:scale-95`).",
+      "Ripple effect on tap for mobile feel."
+    ],
+    "accessibility": [
+      "Maintain high contrast ratios (APCA preferred).",
+      "Do not rely on color to convey meaning (use text labels or icons in addition to 'color' changes, though here 'color' is just shade of gray)."
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Install `lucide-react` for icons.",
+    "Install `clsx` and `tailwind-merge` for class utility.",
+    "Install `sonner` for notifications.",
+    "Use the provided image URLs for placeholders and backgrounds.",
+    "Implement the font definitions in `index.css` or `layout.tsx` (via Google Fonts import).",
+    "Strictly follow the Mobile-First approach for Instructor views."
+  ]
+}
