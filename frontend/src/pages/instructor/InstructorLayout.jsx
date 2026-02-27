@@ -1,6 +1,6 @@
 import { Outlet, useNavigate } from "react-router-dom";
 import { useAuth } from "@/lib/auth";
-import { useTheme } from "next-themes";
+import { useTheme } from "@/lib/theme";
 import { Button } from "@/components/ui/button";
 import { LogOut, Moon, Sun } from "lucide-react";
 
