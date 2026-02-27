@@ -17,7 +17,8 @@ export default function DancersPage() {
   const loadDancers = () => {
     api.get("/dancers", { params: { search: search || undefined } }).then((r) => setDancers(r.data)).catch(() => {});
   };
-  useEffect(loadDancers, []);
+  // reload whenever the search term changes
+  useEffect(loadDancers, [search]);
 
   const handleSearch = (e) => {
     e.preventDefault();
